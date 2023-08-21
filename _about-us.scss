@@ -1,0 +1,82 @@
+.about {
+  &__order-head {
+    // width: 30%;
+    // margin-left: 35%;
+    // background-color: $yellow;
+    // border-radius: 1rem;
+    h2 {
+      padding: 0 1rem;
+      text-align: center;
+      color: $white;
+      font-size: 3rem;
+      font-weight: 500;
+      background-color: $yellow;
+      border-radius: 1rem;
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+}
+.about-us {
+  width: 60%;
+  margin: 0 auto;
+  h2 {
+    margin-top: 2rem;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
+  &__img {
+    margin-top: 2rem;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+.about-desc {
+  width: 80%;
+  margin: 2rem auto;
+  h2 {
+    color: $primary;
+  }
+}
+.reviews {
+  h2 {
+    padding: 0 1rem;
+    text-align: center;
+    color: $white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    background-color: $yellow;
+    border-radius: 1rem;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  width: 80%;
+  margin: 2rem auto;
+
+  &__desc {
+    display: flex;
+  }
+  &__img {
+    width: 60%;
+    img {
+      width: 80%;
+    }
+  }
+
+  &__item {
+    h3 {
+      // text-align: center;
+      color: $primary;
+      font-size: 1.8rem;
+    }
+    h4 {
+      font-size: 1.25rem;
+    }
+  }
+}
+.closed-star {
+  color: $yellow;
+}

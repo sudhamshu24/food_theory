@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bundle.css" type="text/css" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+      type="text/css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__nav">
+        <a class="header__nav__logo" href="index.html"
+          ><img
+            src="assets/logo.png"
+            height="100"
+            width="100"
+            alt="Foodies Theory Logo"
+        /></a>
+        <nav class="screen">
+          <a class="register">Register</a>
+          <a class="login" href="login.html">Login</a>
+        </nav>
+        <div class="mobile-nav"><i class="fa fa-bars"></i></div>
+        <nav class="mobile hidden">
+          <a class="register">Register</a>
+          <a class="login" href="login.html">Login</a>
+        </nav>
+      </div>
+      <div class="track-modal hidden">
+        <button class="close-modal">&times;</button>
+        <label for="track__inp">Enter your Confirmation ID</label>
+        <input type="number" class="track__inp" />
+        <a class="track__nav" href="./placeOrder.html">VIEW STATUS</a>
+      </div>
+      <div class="overlay hidden"></div>
+    </header>
+    <main class="mapmain">
+      <section class="mapSection">
+        <h2 class="mapSection__h2">YOUR LOCATION</h2>
+        <div
+          id="map"
+          style="
+            width: 100%;
+            padding: 1rem;
+            box-sizing: border-box;
+            height: 400px;
+            margin-bottom: 3rem;
+          "
+        ></div>
+        <div id="instructions"><h3>DIRECTIONS</h3></div>
+      </section>
+      <section class="confirm">
+        <h2 class="confirm__h2">Order Details</h2>
+        <div class="confirm__details">
+          <h3>Ordered By:</h3>
+          <span class="confirm__orderedby"></span>
+          <h3>Amount:</h3>
+          <span class="confirm__amount"></span>
+          <h3>Status:</h3>
+          <span class="confirm__status"></span>
+          <h3>Type:</h3>
+          <span class="confirm__type"></span>
+          <h3>Items:</h3>
+          <span class="confirm__items"></span>
+        </div>
+        <p class="confirm__desc">
+          Your Order Confirmation ID is
+          <span class="confirm__id">ConfirmationID</span>. Please use this ID to
+          track your order.
+        </p>
+        <!-- <a href="./track.html">TRACK MY ORDER</a> -->
+        <div class="duration"></div>
+        <p class="confirm__typedesc">
+          Your Order has been accepted by the restaurant and the chefs are
+          preparing your food. Please wait for your order to be ready
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="footer__container__list">
+          <li class="footer__container__list__first">COMPANY</li>
+          <li>Blog</li>
+          <li>Investor</li>
+          <li>Feedback</li>
+          <li>Ads</li>
+        </ul>
+        <ul class="footer__container__list">
+          <li class="footer__container__list__first">ABOUT</li>
+          <li>Gift card</li>
+          <li>Card Balance Enquiry</li>
+          <li>FAQ</li>
+        </ul>
+        <ul class="footer__container__list">
+          <li class="footer__container__list__first">LEGAL</li>
+          <li>Disclaimer</li>
+          <li>Terms &amp; Conditions</li>
+          <li>Privacy Policy</li>
+        </ul>
+        <ul class="footer__container__list--last">
+          <li class="footer__container__list--last--first-li">SOCIAL MEDIA</li>
+          <li><i class="fa fa-facebook-f" aria-hidden="true"></i></li>
+          <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+          <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        All Rights Reserved. Copyright &copy; Jubilant FoodWorks Ltd.
+      </div>
+    </footer>
+    <!-- <script>
+      let lat, lng;
+      window.onload = function () {
+        if (navigator.geolocation) {
+          let options = {
+            enableHighAccuracy: true, // Enable high accuracy, if available
+            timeout: 10000, // 10 seconds
+            maximumAge: 300000, // Only accept cached positions whose age is not greater than 5 minutes
+          };
+
+          navigator.geolocation.getCurrentPosition(displayPosition);
+        } else {
+          // displayError("Update your browser to use Geolocation.");
+        }
+      };
+      function displayPosition(pos) {
+        document.getElementById("timestamp").innerText = new Date(
+          pos.timestamp
+        );
+        document.getElementById("lat").innerText = pos.coords.latitude;
+        lat = pos.coords.latitude;
+        document.getElementById("long").innerText = pos.coords.longitude;
+        lng = pos.coords.longitude;
+        showMap(lat, lng);
+      }
+
+      function locationError(error) {
+        let msg = "";
+
+        console.log("error.message = " + error.message);
+        switch (error.code) {
+          case error.PERMISSION_DENIED:
+            msg = "User does not want to display their location.";
+            break;
+          case error.POSITION_UNAVAILABLE:
+            msg = "Can't determine user's location.";
+            break;
+          case error.TIMEOUT:
+            msg = "The request for geolocation information timed out.";
+            break;
+          case error.UNKNOWN_ERROR:
+            msg = "An unknown error occurred.";
+            break;
+        }
+
+        displayError(msg);
+      }
+
+      function displayError(msg) {
+        let elem = document.getElementById("errorArea");
+        elem.classList.remove("d-none");
+        elem.innerHTML = msg;
+      }
+      mapboxgl.accessToken =
+        "pk.eyJ1Ijoic3dhcG5pa2E5OCIsImEiOiJja2tmM3cybW0wcHg3MndxdDRwMHVsd3pvIn0.VmNY-6vcIA6sksGgLzBsbg";
+
+      function showMap(lat, lng) {
+        var map = new mapboxgl.Map(
+          {
+            container: "map",
+            style: "mapbox://styles/mapbox/streets-v11", // stylesheet location
+
+            center: [lng, lat], // starting position [lng, lat]
+            zoom: 10, // starting zoom
+          },
+          console.log(lat, lng)
+        );
+        var marker = new mapboxgl.Marker().setLngLat([lng, lat]).addTo(map);
+        // const nav = new mapboxgl.NavigationControl();
+        // map.addControl(nav);
+
+        // var directions = new MapboxDirections({
+        //   accessToken: mapboxgl.accessToken,
+        // });
+
+        // map.addControl(directions, "top-left");
+      }
+
+      // map.addControl(new mapboxgl.NavigationControl());
+    </script> -->
+    <script src="header.bundle.js"></script>
+    <script src="placeOrder.bundle.js"></script>
+  </body>
+</html>

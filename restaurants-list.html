@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="styles/main.css?v=1.0" />
+    <link rel="stylesheet" href="styles/test.css?v=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+    <link rel="stylesheet" href="bundle.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__nav">
+        <a class="header__nav__logo" href="index.html"
+          ><img
+            src="assets/logo.png"
+            height="100"
+            width="100"
+            alt="Foodies Theory Logo"
+        /></a>
+        <nav class="screen">
+          <a class="register">Register</a>
+          <a class="login" href="login.html">Login</a>
+        </nav>
+        <div class="mobile-nav"><i class="fa fa-bars"></i></div>
+        <nav class="mobile hidden">
+          <a class="register">Register</a>
+          <a class="login" href="login.html">Login</a>
+        </nav>
+      </div>
+      <div class="track-modal hidden">
+        <button class="close-modal">&times;</button>
+        <label for="track__inp">Enter your Confirmation ID</label>
+        <input type="number" class="track__inp" />
+        <a class="track__nav" href="./placeOrder.html">VIEW STATUS</a>
+      </div>
+      <div class="overlay hidden"></div>
+    </header>
+    <main class="main">
+      <h2 class="main__heading">Favourite food at your doorstep.</h2>
+      <section class="rest-details">
+        <!-- <h2>RESTAURANT DETAILS</h2> -->
+        <div class="rest-details__list">
+          <div class="rest-details__list__addr"><h3>Address</h3></div>
+          <div class="rest-details__list__tim"><h3>Timings</h3></div>
+          <div class="rest-details__list__rate"><h3>Overall Rating</h3></div>
+        </div>
+      </section>
+      <section class="main__top">
+        <div class="main__top__img-div">
+          <!-- <form class="main__top__form">
+            <fieldset>
+              <label for="main__top__form__search"
+                >Search for your favourite food at your nearby restaurant</label
+              >
+              <input
+                type="search"
+                class="main__top__form__search"
+                list="search-values"
+                placeholder="Search for your favourite food at your nearby restaurant"
+              />
+
+              <datalist id="search-values"></datalist>
+              <input
+                type="submit"
+                class="main__top__form__submit"
+                value="SEARCH"
+              />
+            </fieldset>
+          </form> -->
+        </div>
+      </section>
+
+      <section class="main__container">
+        <h2>OUR FEATURES</h2>
+        <div class="main__container__cards">
+          <figure class="main__container__cards__card">
+            <img src="assets/menu.png" alt="foodies theory menu" />
+            <h3>VIEW MENU</h3>
+            <p>Explore our variety of food items, delivered within 30 mins!</p>
+            <figcaption><a href="order.html">ORDER ONLINE</a></figcaption>
+          </figure>
+          <figure class="main__container__cards__card">
+            <img src="assets/reserve-table.png" alt="foodies theory menu" />
+            <h3>RESERVE TABLE</h3>
+            <p>Celebrate the joy of our food with your friends and family</p>
+            <figcaption><a href="booktable.html">BOOK NOW</a></figcaption>
+          </figure>
+          <figure class="main__container__cards__card">
+            <img src="assets/restaurant.png" alt="foodies theory menu" />
+            <h3>ABOUT RESTAURANT</h3>
+            <p>Look for a foodies theory restaurant near you</p>
+            <figcaption><a href="about-us.html">VIEW NOW</a></figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="footer__container__list">
+          <li class="footer__container__list__first">COMPANY</li>
+          <li>Blog</li>
+          <li>Investor</li>
+          <li>Feedback</li>
+          <li>Ads</li>
+        </ul>
+        <ul class="footer__container__list">
+          <li class="footer__container__list__first">ABOUT</li>
+          <li>Gift card</li>
+          <li>Card Balance Enquiry</li>
+          <li>FAQ</li>
+        </ul>
+        <ul class="footer__container__list">
+          <li class="footer__container__list__first">LEGAL</li>
+          <li>Disclaimer</li>
+          <li>Terms &amp; Conditions</li>
+          <li>Privacy Policy</li>
+        </ul>
+        <ul class="footer__container__list--last">
+          <li class="footer__container__list--last--first-li">SOCIAL MEDIA</li>
+          <li><i class="fa fa-facebook-f" aria-hidden="true"></i></li>
+          <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+          <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        All Rights Reserved. Copyright &copy; Jubilant FoodWorks Ltd.
+      </div>
+    </footer>
+    <!-- <script src="scripts/main.js"></script> -->
+    <script src="header.bundle.js"></script>
+    <script src="index.bundle.js"></script>
+  </body>
+</html>

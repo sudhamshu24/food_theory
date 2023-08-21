@@ -1,0 +1,20 @@
+.hidden {
+  display: none !important;
+}
+.invalid {
+  border: 3px solid red;
+}
+.disabled-btn {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+main {
+  margin-top: 3rem !important;
+}

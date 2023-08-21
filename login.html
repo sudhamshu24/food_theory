@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles/main.css?v=1.0" />
+    <link rel="stylesheet" href="styles/test.css?v=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+    <link rel="stylesheet" href="bundle.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    
+    <header class="header">
+      <div class="header__nav">
+        <a class="header__nav__logo" href="index.html"
+          ><img
+            src="assets/logo.png"
+            height="100"
+            width="100"
+            alt="Foodies Theory Logo"
+        /></a>
+
+        <div class="mobile-nav"><i class="fa fa-bars"></i></div>
+        <nav class="mobile hidden">
+          <a class="register">Register</a>
+          <a class="login" href="login.html">Login</a>
+        </nav>
+      </div>
+      <div class="track-modal hidden">
+        <button class="close-modal">&times;</button>
+        <label for="track__inp">Enter your Confirmation ID</label>
+        <input type="number" class="track__inp" />
+        <a class="track__nav" href="./placeOrder.html">VIEW STATUS</a>
+      </div>
+      <div class="overlay hidden"></div>
+    </header>
+    <main class="main__login">
+      <div class="main__order-head"><h2>LOGIN HERE</h2></div>
+      <!-- <h2>You are one step away to eat</h2>
+      <p>Please Sign in First..</p> -->
+      <form class="main__login-form">
+        <fieldset>
+          <h3>Enter your Details</h3>
+          <label for="user-name">User Name</label>
+          <input
+            type="text"
+            class="main__user-name inp"
+            list="json-user-name"
+          />
+          <datalist id="json-user-name"></datalist>
+          <label for="password">Password</label>
+
+          <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" class="main__password inp" />
+          <label for="designation">Access Level</label>
+          <select class="designation inp">
+            <option value="user">User</option>
+            <option value="manager">Manager</option>
+          </select>
+          <input type="submit" class="main__user-submit inp" value="LOGIN" />
+        </fieldset>
+      </form>
+      <!-- <p class="reg-link">New to this page? <a>Register Here</a></p> -->
+    </main>
+    <main class="main__logged-in hidden">
+      <h2 class="main__logged-in__heading">
+        Logged in as <span class="main__logged-in__heading__name">USER</span>!!
+      </h2>
+      <section>
+        <h2 class="get-started-title">Okay, Let's Get Started!!</h2>
+        <div class="get-started">
+          <div class="get-started__left">
+            <h3 class="get-started__head">Order Online?</h3>
+            <p class="get-started__desc">Find your favourite food.</p>
+            <a href="#" class="get-started__btn">PLACE ORDER</a>
+          </div>
+          <div class="get-started__right">
+            <h3 class="get-started__head">Visit the Restaurant</h3>
+            <p class="get-started__desc">Get your table reserved.</p>
+            <a href="#" class="get-started__btn">BOOK A TABLE</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>YOUR PREVIOUS ORDERS</h2>
+        <div></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="footer__container__list">
+          <li class="footer__container__list__first">COMPANY</li>
+          <li>Blog</li>
+          <li>Investor</li>
+          <li>Feedback</li>
+          <li>Ads</li>
+        </ul>
+        <ul class="footer__container__list">
+          <li class="footer__container__list__first">ABOUT</li>
+          <li>Gift card</li>
+          <li>Card Balance Enquiry</li>
+          <li>FAQ</li>
+        </ul>
+        <ul class="footer__container__list">
+          <li class="footer__container__list__first">LEGAL</li>
+          <li>Disclaimer</li>
+          <li>Terms &amp; Conditions</li>
+          <li>Privacy Policy</li>
+        </ul>
+        <ul class="footer__container__list--last">
+          <li class="footer__container__list--last--first-li">SOCIAL MEDIA</li>
+          <li><i class="fa fa-facebook-f" aria-hidden="true"></i></li>
+          <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+          <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        All Rights Reserved. Copyright &copy; Jubilant FoodWorks Ltd.
+      </div>
+    </footer>
+    <script src="header.bundle.js"></script>
+    <script src="login.bundle.js"></script>
+  </body>
+</html>

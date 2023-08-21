@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles/main.css?v=1.0" />
+    <link rel="stylesheet" href="styles/test.css?v=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+    <link rel="stylesheet" href="bundle.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- <div
+      class="tenor-gif-embed"
+      data-postid="16653397"
+      data-share-method="host"
+      data-aspect-ratio="1.2357320099255582"
+    >
+      <a
+        href="https://tenor.com/view/mochi-peachcat-cat-cute-cat-eat-hungry-gif-16653397"
+        >Mochi Peachcat Cute Cat GIF</a
+      >
+      from
+      <a href="https://tenor.com/search/mochipeachcat-gifs"
+        >Mochipeachcat GIFs</a
+      >
+    </div>
+    <script
+      type="text/javascript"
+      async
+      src="https://tenor.com/embed.js"
+    ></script> -->
+    <header class="header">
+      <div class="header__nav">
+        <a class="header__nav__logo" href="index.html"
+          ><img
+            src="assets/logo.png"
+            height="100"
+            width="100"
+            alt="Foodies Theory Logo"
+        /></a>
+        <nav class="screen">
+          <a class="register">Register</a>
+          <a class="login" href="login.html">Login</a>
+        </nav>
+        <div class="mobile-nav"><i class="fa fa-bars"></i></div>
+        <nav class="mobile hidden">
+          <a class="register">Register</a>
+          <a class="login" href="login.html">Login</a>
+        </nav>
+      </div>
+      <div class="track-modal hidden">
+        <button class="close-modal">&times;</button>
+        <label for="track__inp">Enter your Confirmation ID</label>
+        <input type="number" class="track__inp" />
+        <a class="track__nav" href="./placeOrder.html">VIEW STATUS</a>
+      </div>
+      <div class="overlay hidden"></div>
+    </header>
+    <main class="dashboard">
+      <!-- <h2 class="dashboard__h2">Welcome Foodies Theory Manager</h2> -->
+      <h3 class="dashboard__h3">Today's Status</h3>
+      <section class="dashboard__section">
+        <section class="online-orders">
+          <h2>ONLINE ORDERS</h2>
+          <div class="ordered">
+            <h3>Pending Orders</h3>
+            <div class="ordered__list"></div>
+          </div>
+          <button class="view-previous-orders">View all previous orders</button>
+          <div class="ready hidden">
+            <h2>Previous Online Orders</h2>
+            <div class="ready__list"></div>
+          </div>
+        </section>
+        <section class="table-booking">
+          <h2>TABLE BOOKINGS</h2>
+          <div class="pending-tables">
+            <h3>Pending Table Bookings</h3>
+            <div class="pending"></div>
+          </div>
+          <button class="view-previous-tables">
+            View all completed orders
+          </button>
+          <div class="active hidden">
+            <h2>Active Table Bookings</h2>
+            <div class="active__list"></div>
+          </div>
+        </section>
+      </section>
+      <section class="add-tables">
+        <h2>ADD/DELETE TABLES HERE</h2>
+        <form>
+          <fieldset>
+            <legend>Add Tables</legend>
+            <label for="dine-in__capacity">Enter the Capacity</label>
+            <input
+              type="text"
+              class="dine-in__capacity"
+              placeholder="Enter the Capacity"
+            />
+            <input type="submit" class="dine-in__submit" value="SUBMIT" />
+          </fieldset>
+        </form>
+        <canvas id="canvas" width="600" height="300"></canvas>
+        <button class="canvas__save">SAVE CANVAS</button>
+        <button class="canvas__del">DELETE CANVAS</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="footer__container__list">
+          <li class="footer__container__list__first">COMPANY</li>
+          <li>Blog</li>
+          <li>Investor</li>
+          <li>Feedback</li>
+          <li>Ads</li>
+        </ul>
+        <ul class="footer__container__list">
+          <li class="footer__container__list__first">ABOUT</li>
+          <li>Gift card</li>
+          <li>Card Balance Enquiry</li>
+          <li>FAQ</li>
+        </ul>
+        <ul class="footer__container__list">
+          <li class="footer__container__list__first">LEGAL</li>
+          <li>Disclaimer</li>
+          <li>Terms &amp; Conditions</li>
+          <li>Privacy Policy</li>
+        </ul>
+        <ul class="footer__container__list--last">
+          <li class="footer__container__list--last--first-li">SOCIAL MEDIA</li>
+          <li><i class="fa fa-facebook-f" aria-hidden="true"></i></li>
+          <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+          <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        All Rights Reserved. Copyright &copy; Jubilant FoodWorks Ltd.
+      </div>
+    </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-database.js"></script>
+    <script src="header.bundle.js"></script>
+    <script src="dashboard.bundle.js"></script>
+  </body>
+</html>

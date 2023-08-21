@@ -1,0 +1,649 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Mission Chinese Food",
+      "neighborhood": "Manhattan",
+      "photograph": "",
+      "address": "171 E Broadway, New York, NY 10002",
+      "location": [78.37071187632378, 17.451154182114763],
+      "operating-hours": {
+        "open": "12:00:00",
+        "close": "22:00:00"
+      },
+
+      "menuItems": [
+        {
+          "id": 1,
+          "name": "Veg Burger",
+          "category": "Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/veg burger.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 1,
+          "tags": ["Must Try", "Best Seller"],
+          "rating": 4
+        },
+        {
+          "id": 2,
+          "name": "Veg Pizza",
+          "category": "Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/veg pizza.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": ["Must Try", "Best Seller"],
+          "rating": 4
+        },
+        {
+          "id": 3,
+          "name": "Veg Pasta",
+          "category": "Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/veg pasta.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": ["Must Try"],
+          "rating": 4
+        },
+        {
+          "id": 4,
+          "name": "Veg Manchuria",
+          "category": "Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/veg burger.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": ["Must Try"],
+          "rating": 4
+        },
+        {
+          "id": 5,
+          "name": "Veg Biryani",
+          "category": "Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/veg biryani.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 4,
+          "tags": ["Must Try"],
+          "rating": 4
+        },
+        {
+          "id": 6,
+          "name": "Veg Pulao",
+          "category": "Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/veg pulao.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": ["Best Seller"],
+          "rating": 4
+        },
+        {
+          "id": 7,
+          "name": "Veg thali",
+          "category": "Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/veg thali.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": ["Best Seller"],
+          "rating": 4
+        },
+        {
+          "id": 8,
+          "name": "Veg Fried Rice",
+          "category": "Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/veg fried rice.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": [],
+          "rating": 4
+        },
+        {
+          "id": 9,
+          "name": "Veg Noodles",
+          "category": "Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/veg-noodles.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": [],
+          "rating": 4
+        },
+        {
+          "id": 10,
+          "name": "Veg salad",
+          "category": "Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/veg salad.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": [],
+          "rating": 4
+        },
+        {
+          "id": 11,
+          "name": "Veg garlic bread",
+          "category": "Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/veg salad.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 1,
+          "tags": [],
+          "rating": 4
+        },
+        {
+          "id": 12,
+          "name": "Pav Bhaji",
+          "category": "Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/pav bhaji.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": [],
+          "rating": 4
+        },
+        {
+          "id": 13,
+          "name": "French Fries",
+          "category": "Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/fries.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 1,
+          "tags": [],
+          "rating": 4
+        },
+        {
+          "id": 14,
+          "name": "Chicken Biryani",
+          "category": "Non Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/chicken biryani.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 4,
+          "tags": [],
+          "rating": 4
+        },
+        {
+          "id": 15,
+          "name": "Chicken Burger",
+          "category": "Non Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/chicken burger.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": [],
+          "rating": 4
+        },
+        {
+          "id": 16,
+          "name": "Chicken Kebab",
+          "category": "Non Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/chicken kebab.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 1,
+          "tags": [],
+          "rating": 4
+        },
+        {
+          "id": 17,
+          "name": "Chicken Noodles",
+          "category": "Non Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/chicken noodles.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": [],
+          "rating": 4
+        },
+        {
+          "id": 18,
+          "name": "Chicken Nuggets",
+          "category": "Non Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/chicken nuggets.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 1,
+          "tags": [],
+          "rating": 4
+        },
+        {
+          "id": 19,
+          "name": "Chicken Pasta",
+          "category": "Non Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/chicken biryani.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": [],
+          "rating": 4
+        },
+        {
+          "id": 20,
+          "name": "Chicken Pizza",
+          "category": "Non Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/chicken pizza.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": [],
+          "rating": 4
+        },
+        {
+          "id": 21,
+          "name": "Chicken Salad",
+          "category": "Non Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/chicken salad.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": [],
+          "rating": 4
+        },
+        {
+          "id": 22,
+          "name": "Fish Fry",
+          "category": "Non Veg",
+          "description": "Tender, Spicy and Juicy. Original or Peri-Crusted",
+          "image": "assets/fish fry.jpg",
+          "price": 250,
+          "cuisine_name": "Indian",
+          "consistsOf": [
+            "Cheese",
+            "Cabbage",
+            "Spinach",
+            "Potato Cutlet",
+            "Capsicum",
+            "Bell Peppers"
+          ],
+          "consumableFor": 2,
+          "tags": [],
+          "rating": 4
+        }
+      ],
+
+      "orders": [],
+      "overallRating": 4,
+      "reviews": [
+        {
+          "name": "Steve",
+          "date": "October 26, 2016",
+          "rating": 4,
+          "comments": "Mission Chinese Food has grown up from its scrappy Orchard Street days into a big, two story restaurant equipped with a pizza oven, a prime rib cart, and a much broader menu. Yes, it still has all the hits — the kung pao pastrami, the thrice cooked bacon —but chef/proprietor Danny Bowien and executive chef Angela Dimayuga have also added a raw bar, two generous family-style set menus, and showstoppers like duck baked in clay. And you can still get a lot of food without breaking the bank."
+        },
+        {
+          "name": "Morgan",
+          "date": "October 26, 2016",
+          "rating": 4,
+          "comments": "This place is a blast. Must orders: GREEN TEA NOODS, sounds gross (to me at least) but these were incredible!, Kung pao pastrami (but you already knew that), beef tartare was a fun appetizer that we decided to try, the spicy ma po tofu SUPER spicy but delicous, egg rolls and scallion pancake i could have passed on... I wish we would have gone with a larger group, so much more I would have liked to try!"
+        },
+        {
+          "name": "Jason",
+          "date": "October 26, 2016",
+          "rating": 3,
+          "comments": "I was VERY excited to come here after seeing and hearing so many good things about this place. Having read much, I knew going into it that it was not going to be authentic Chinese. The place was edgy, had a punk rock throwback attitude, and generally delivered the desired atmosphere. Things went downhill from there though. The food was okay at best and the best qualities were easily overshadowed by what I believe to be poor decisions by the kitchen staff."
+        }
+      ]
+    }
+  ],
+  "userDetails": [
+    {
+      "username": "user1",
+      "password": "1111",
+      "designation": "user",
+      "cartItems": []
+    },
+    {
+      "username": "user2",
+      "password": "2222",
+      "designation": "user",
+      "cartItems": []
+    },
+    {
+      "username": "user3",
+      "password": "3333",
+      "designation": "user",
+      "cartItems": []
+    },
+    {
+      "username": "user4",
+      "password": "4444",
+      "designation": "user",
+      "cartItems": []
+    },
+    {
+      "username": "user5",
+      "password": "5555",
+      "designation": "user",
+      "cartItems": []
+    },
+    {
+      "username": "user6",
+      "password": "6666",
+      "designation": "user",
+      "cartItems": []
+    },
+    {
+      "username": "user7",
+      "password": "7777",
+      "designation": "user",
+      "cartItems": []
+    },
+    {
+      "username": "manager1",
+      "password": "1111",
+      "designation": "manager",
+      "cartItems": []
+    },
+    {
+      "username": "manager2",
+      "password": "2222",
+      "designation": "manager",
+      "cartItems": []
+    },
+    {
+      "username": "manager3",
+      "password": "3333",
+      "designation": "manager",
+      "cartItems": []
+    },
+    {
+      "username": "manager4",
+      "password": "4444",
+      "designation": "manager",
+      "cartItems": []
+    }
+  ],
+  "admin": {
+    "acceptReservations": true,
+    "onlineOrders": true,
+    "numberOfTables": 12,
+    "timeslots": [
+      { "time": "12pm", "reserved": false },
+      { "time": "1pm", "reserved": false },
+      { "time": "2pm", "reserved": false },
+      { "time": "3pm", "reserved": false },
+      { "time": "4pm", "reserved": false },
+      { "time": "5pm", "reserved": false },
+      { "time": "6pm", "reserved": false },
+      { "time": "7pm", "reserved": false },
+      { "time": "8pm", "reserved": false },
+      { "time": "9pm", "reserved": false }
+    ],
+    "tables": [
+      {
+        "id": 1,
+        "capacity": 4,
+        "uniq": 156548
+      },
+      {
+        "id": 2,
+        "capacity": 4,
+        "uniq": 156551
+      },
+      {
+        "id": 3,
+        "capacity": 2,
+        "uniq": 156123
+      },
+      {
+        "id": 4,
+        "capacity": 2,
+        "uniq": 159637
+      },
+      {
+        "id": 5,
+        "capacity": 4,
+        "uniq": 156789
+      },
+      {
+        "id": 6,
+        "capacity": 4,
+        "uniq": 157411
+      },
+      {
+        "id": 7,
+        "capacity": 6,
+        "uniq": 156852
+      },
+      {
+        "id": 8,
+        "capacity": 6,
+        "uniq": 156857
+      },
+      {
+        "id": 9,
+        "capacity": 6,
+        "uniq": 157531
+      },
+      {
+        "id": 10,
+        "capacity": 8,
+        "uniq": 156951
+      },
+      {
+        "id": 11,
+        "capacity": 8,
+        "uniq": 156654
+      },
+      {
+        "id": 12,
+        "capacity": 8,
+        "uniq": 158753
+      },
+      {
+        "id": 13,
+        "capacity": 10,
+        "uniq": 159798
+      },
+      {
+        "id": 14,
+        "capacity": 10,
+        "uniq": 155252
+      },
+      {
+        "id": 15,
+        "capacity": 12,
+        "uniq": 159999
+      },
+      {
+        "id": 16,
+        "capacity": 12,
+        "uniq": 157777
+      }
+    ]
+  }
+}

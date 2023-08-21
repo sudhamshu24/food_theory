@@ -1,0 +1,455 @@
+@media screen and (min-width: 1200px) {
+  .mobile-nav,
+  .mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    padding: 0 1%;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .main {
+    &__login-form {
+      width: 60%;
+    }
+  }
+  .reserve {
+    width: 96%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header {
+    .screen {
+      display: none;
+    }
+    &__nav {
+      display: block;
+      .mobile {
+        position: absolute;
+        background-color: $gray-100;
+        z-index: 99;
+        display: block;
+        width: 50%;
+        margin-left: 45%;
+        a {
+          display: block;
+          text-align: left;
+        }
+      }
+    }
+
+    .mobile-nav {
+      display: block;
+      position: absolute;
+      right: 10%;
+      top: 1rem;
+      i {
+        font-size: 4rem;
+      }
+    }
+  }
+  .main {
+    &__top {
+      &__div {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+
+      &__nearby {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        max-width: 30rem;
+      }
+      &__form {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+    &__login {
+      width: 80%;
+      margin: 0 auto;
+    }
+    &__login-form {
+      width: 70%;
+    }
+    &__heading {
+      font-size: 2.5rem;
+    }
+    &__container {
+      h2 {
+        font-size: 2rem;
+      }
+      &__cards {
+        &__card {
+          width: 45%;
+        }
+      }
+    }
+  }
+  .restaurants {
+    &__item {
+      width: 49%;
+    }
+  }
+  .menu {
+    &__lists {
+      width: 49%;
+    }
+    &__text {
+      width: 28vw;
+      &__h3 {
+        font-size: 2vw;
+      }
+      &__catrgoryv {
+        font-size: 2vw;
+      }
+      &__h4 {
+        font-size: 2vw;
+      }
+    }
+  }
+  .reserve {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    &__form {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  .previous-orders {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .cartitems {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .carttotal {
+    display: block;
+    width: 65%;
+    max-width: 25rem;
+    margin: 2rem 17%;
+  }
+  .mapSection {
+    width: 90%;
+    margin: 0 5%;
+  }
+  #instructions {
+    top: 6rem;
+    width: 30%;
+  }
+  .confirm {
+    width: 80%;
+    margin: 0 10%;
+    &__orderedby,
+    &__amount,
+    &__status,
+    &__type,
+    &__items {
+      font-weight: 400;
+      // float: right;
+      // margin-right: 20%;
+    }
+  }
+  .footer {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      &__list {
+        width: 40%;
+      }
+    }
+  }
+  .dashboard {
+    width: 96%;
+
+    &__h3 {
+      font-size: 2.5rem;
+    }
+    .prev-orders__left,
+    .prev-orders__right {
+      width: 100%;
+    }
+  }
+  .ordered {
+    &__list {
+      &__item {
+        div {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .online-orders,
+  .table-booking,
+  .add-tables {
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  .track-modal {
+    margin: 0 auto;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    &__top {
+      &__form {
+        &__search {
+          width: 100%;
+        }
+        &__submit {
+          width: 40%;
+        }
+      }
+    }
+    &__login {
+      width: 90%;
+      margin: 0 auto;
+    }
+    &__order-head {
+      width: 90%;
+      margin: 0 auto;
+    }
+    &__login-form {
+      width: 90%;
+    }
+    &__heading {
+      font-size: 2rem;
+    }
+    &__container {
+      h2 {
+        font-size: 1.5rem;
+      }
+      &__cards {
+        &__card {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .reserve {
+    &__form {
+      width: 100%;
+    }
+  }
+  .restaurants {
+    &__h2 {
+      font-size: 2.5rem;
+    }
+    &__item {
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+  .rest-details {
+    &__list {
+      div {
+        width: 99%;
+      }
+    }
+  }
+  .menu {
+    &__lists {
+      width: 80%;
+      margin: 0 10%;
+    }
+    &__text {
+      width: 49vw;
+      &__h3 {
+        font-size: 3vw;
+      }
+      &__catrgoryv {
+        font-size: 10vw;
+      }
+      &__h4 {
+        font-size: 3vw;
+      }
+    }
+  }
+  .previous-orders {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .cartitems {
+    width: 100%;
+  }
+  .carttotal {
+    display: block;
+    width: 90%;
+    max-width: 25rem;
+    margin: 2rem 5%;
+  }
+  .mapSection {
+    width: 100%;
+    margin: 0;
+  }
+  #instructions {
+    top: 6rem;
+    width: 30%;
+  }
+  .confirm {
+    width: 100%;
+    margin: 0;
+  }
+  .dashboard {
+    width: 96%;
+
+    &__h3 {
+      font-size: 2rem;
+    }
+    &__section {
+      section {
+        width: 100%;
+      }
+      .table-booking {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+  .ordered {
+    &__list {
+      &__item {
+        div {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .online-orders,
+  .table-booking,
+  .add-tables {
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+  .add-tables {
+    width: 90%;
+    margin: 0 5%;
+    form {
+      fieldset {
+        .dine-in__capacity {
+          width: 100%;
+        }
+        .dine-in__submit {
+          line-height: 1.5rem;
+          width: 50%;
+        }
+      }
+    }
+  }
+  .track-modal {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .restaurants {
+    &__h2 {
+      font-size: 2rem;
+    }
+    &__item {
+      width: 100%;
+      margin-left: 0%;
+    }
+  }
+  .main {
+    &__login {
+      width: 100%;
+    }
+    &__login-form {
+      width: 80%;
+      margin: 1rem auto;
+    }
+  }
+  .prev-orders {
+    &__item {
+      display: block;
+    }
+    &__left,
+    &__right {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  .plus,
+  .minus {
+    margin: 0 0.5rem;
+  }
+  .cartpage {
+    width: 100%;
+  }
+  .cartitems {
+    &__list {
+      &__desc {
+        &__buttons {
+          button {
+            left: 40%;
+          }
+        }
+      }
+    }
+  }
+  .mapSection {
+    width: 100%;
+    margin: 0;
+  }
+  #instructions {
+    top: 6rem;
+    width: 50%;
+  }
+
+  .dashboard {
+    width: 96%;
+
+    &__h3 {
+      font-size: 2rem;
+    }
+    &__section {
+      section {
+        width: 100%;
+      }
+    }
+  }
+  .ordered {
+    &__list {
+      &__item {
+        div {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .online-orders,
+  .table-booking,
+  .add-tables {
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+  .add-tables {
+    width: 100%;
+    margin: 0;
+  }
+  .track-modal {
+    margin: 0 auto;
+    width: 90%;
+  }
+}

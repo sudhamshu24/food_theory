@@ -1,0 +1,108 @@
+.main {
+  &__login {
+    width: 60%;
+    margin: 0 auto;
+  }
+  &__order-head {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 2rem;
+  }
+
+  &__login-form {
+    width: 50%;
+    margin: 2rem auto;
+    box-shadow: 0 0 20px $orange;
+    max-width: 25rem;
+    padding: 2rem;
+    fieldset {
+      border: none;
+    }
+    h3 {
+      color: $primary;
+    }
+  }
+
+  &__logged-in {
+    width: 60%;
+    margin: 0 auto;
+    &__heading {
+      color: $orange;
+      font-size: 3rem;
+      font-weight: 500;
+
+      &__name {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: ghostwhite;
+        background-color: $orange;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
+.inp {
+  width: 93%;
+  height: 3rem;
+  margin: 1rem;
+  border: none;
+  font-size: 1.1rem;
+  /* display: inline-block; */
+  font-family: $primary-font;
+  box-shadow: 0 0 3px;
+}
+.inp[type="submit"] {
+  height: 2rem;
+  border-radius: 3rem;
+  background-color: $orange;
+  box-shadow: none;
+  border: none;
+}
+.get-started-title {
+  font-weight: 500;
+}
+.get-started {
+  display: flex;
+  text-align: center;
+
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  &__head {
+    color: darkblue;
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+  &__left {
+    border-right: 2px solid $orange;
+  }
+  &__right {
+    border-left: 2px solid $orange;
+  }
+  &__right,
+  &__left {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    width: 40%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  &__desc {
+    font-size: 1.5rem;
+  }
+  &__btn {
+    display: inline-block;
+    height: 3rem;
+    line-height: 3rem;
+    font-weight: 600;
+    font-size: 200;
+    color: white;
+    margin-top: 2rem;
+    background-color: $primary;
+    width: 50%;
+    text-align: center;
+  }
+}

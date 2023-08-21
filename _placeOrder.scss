@@ -1,0 +1,75 @@
+.mapmain {
+  width: 80%;
+  margin: 0 auto;
+}
+.mapSection {
+  width: 59%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.confirm {
+  padding: 1rem;
+  box-sizing: border-box;
+  vertical-align: top;
+  width: 40%;
+  display: inline-block;
+  h2 {
+    margin-bottom: 1rem;
+  }
+  &__orderedby,
+  &__amount,
+  &__status,
+  &__type,
+  &__items {
+    font-weight: 400;
+    // float: right;
+    // margin-right: 5rem;
+  }
+  &__details {
+    border: 2px solid $primary;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    h3,
+    span {
+      width: 49%;
+    }
+  }
+  &__id {
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  &__desc {
+    border-top: 2px solid $primary;
+  }
+}
+.confirm__h2,
+.mapSection__h2 {
+  color: $primary;
+  font-size: 2rem;
+  font-weight: 500;
+}
+#instructions {
+  position: absolute;
+  margin: 20px;
+  width: 25%;
+  top: 2rem;
+  bottom: 20%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow-y: scroll;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  line-height: 2rem;
+}
+
+.duration {
+  text-align: center;
+  font-size: 1.25rem;
+  border: 2px solid $yellow;
+  margin: 1rem 0rem;
+  font-weight: 500;
+}
